@@ -1,0 +1,575 @@
+/* -------- IMPOSTAZIONI GENERALI -------- */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f9f6f1; /* beige chiaro */
+  color: #3e2723; /* marrone scuro */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header{
+  background-color: #6d4c41; /* marrone medio */
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  background-image: url("img/Bari.avif");/*sfondo inserito tramite url*/
+  background-size: cover;       /* copre tutto lo spazio */
+  background-position: center;  /* centra l'immagine */
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5); /* fallback chiaro */
+  color: #fff;
+  padding: 1.5em 1em;
+  display: flex;
+  align-items:right;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 4em;
+  letter-spacing: 1px;
+  flex-direction: column;
+}
+header img{
+  width: 200px;
+  height: 10%; 
+}
+/* -------- NAVBAR -------- */
+nav {
+  background-color: #8d6e63; /* marroncino */
+  padding: 0.8em 1em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fbe9e7; /* beige chiarissimo */
+  font-weight: bold;
+  padding: 0.4em 0.6em;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #d50000; /* bordeaux acceso */
+  color: #fff;
+}
+
+nav form {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+nav input[type="text"] {
+  padding: 0.4em 0.8em;
+  border: 1px solid #6d4c41;
+  border-radius: 4px;
+  width: 200px;
+}
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #7b2d26;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #b30000;
+  text-decoration: underline;
+}
+.catalogo-menu {
+  position: relative;
+}
+
+.metodi-accesso {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+/* Mostra i metodi col passaggio del mouse */
+.catalogo-menu:hover .metodi-accesso {
+  display: block;
+}
+
+/* Link/metodi del dropdown */
+.metodi-accesso a,
+.metodi-accesso span {
+  display: block;
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.metodi-accesso a:hover {
+  background-color: #eee;
+}
+
+.placeholder {
+  color: #999;
+}
+
+.catalogo-menu {
+  position: relative;
+}
+.catalogo-menu > a::after {
+  content: '▼';  /* freccia verso il basso */
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 0.7em;
+  transition: transform 0.3s ease;
+}
+
+.catalogo-menu:hover > a::after {
+  transform: rotate(180deg);  /* ruota la freccia verso l'alto */
+}
+
+.descrizione-basilica {
+  background-image: url("img/basilica.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 300px;
+  padding: 2rem 4rem;
+  margin:0 ;
+  max-width: none;
+  width: 100%;
+  box-sizing: border-box;
+
+  border-radius: 0;
+
+  background-color: rgba(255,255,255,0.7);
+  background-blend-mode: lighten;
+}
+
+/* Style the Image Used to Trigger the Modal */
+.modal-gallery {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  object-fit: cover;
+  height: 200px;
+}
+
+.modal-gallery:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+ }
+
+/* Sezione principale */
+  section{
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 1rem;
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+}
+
+/* Titoli */
+section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  border-bottom: 3px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #3a3a3a;
+}
+
+/* Box contenitore per i blocchi (video, lettera) */
+.box {
+  background: linear-gradient(145deg, #ffffff, #f4f4f4);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* Video centrato */
+.box iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Box della lettera */
+.lettera-papa {
+  max-width: 900px;
+  max-height: 400px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  overflow-y: auto;        /* Scroll verticale */
+  padding-right: 10px;
+}
+
+.lettera-papa div {
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
+
+.lettera-papa p {
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.lettera-papa p:last-of-type {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #222;
+}
+.box img {
+  width: 100%;            /* L'immagine si adatta alla larghezza del box */
+  height: auto;           /* Mantiene le proporzioni */
+  display: block;         /* Rimuove lo spazio sotto l'immagine */
+  border-radius: 8px;     /* Opzionale: angoli arrotondati */
+}
+.box-metadati{
+  margin: 100px auto;
+  max-width: 200px;
+  border-radius: 500px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background-color: white;
+}
+.box-metadati a{
+  color: #4d4dff;
+}
+.box-metadati-tei{
+  margin: 20px auto;
+  max-width: 200px;
+  border-radius: 200px;
+  background-color: white;
+
+}
+
+.box-metadati-tei a{
+  font-size: 14px;
+  font-style: inherit;
+  color: #4d4dff;
+  }
+/* -------- FOOTER -------- */
+
+footer {
+  background-color: #6d4c41;
+  color: #fbe9e7;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+footer a {
+  color: #fbe9e7;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #fff;
+}
+.item-card {
+  flex: 0 0 auto; /* non si restringe né si espande */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pulsante in basso */
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-width: 220px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.item-card {
+  flex: 0 0 auto;
+  width: 220px;
+  min-width: 220px;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 220px;
+  min-width: 220px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+/* Pulsante "Scopri di più" */
+.scopri-di-piu {
+  margin-top: auto; /* va in basso */
+  background: #5e3c28;
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+}
+
+/* Hover del pulsante */
+.scopri-di-piu:hover {
+  background: #7a5236;
+}
+
+
+/* Aumenta spazio solo prima del pulsante */
+.scopri-di-piu{
+  margin-top: auto; /* porta il pulsante in basso */
+  background: #5e3c28;
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+}
+/* Immagini allineate */
+.item-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Titoli che non escono */
+.item-card h3,
+.item-card h4,
+.item-card h2 {
+  font-size: 1.1em;
+  margin: 10px 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+/* Descrizione */
+.item-card p {
+  font-size: 0.95em;
+  color: #333;
+  margin: 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+/* Pulsante allineato in basso */
+.item-card button,
+.item-card a {
+  margin-top: auto;
+  background-color: #5b3b24;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+
+/* Hover leggero per il pulsante */
+.item-card a:hover {
+  background: #7a5236;
+}
+
+ .monumenti-correlati {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 1000px; /* o quello che preferisci */
+  padding: 1rem;
+}
+
+/* Contenitore delle card */
+.contenitore-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+aside h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  border-bottom: 3px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+.freccia-su {
+  width: 40px;
+  height: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.viaf-link {
+  font-size: 0.85em;
+  vertical-align: super;
+  margin-left: 0.25em;
+  text-decoration: none;
+  color: black; /* colore blu tipo link */
+}
+
+.viaf-link:hover {
+  text-decoration: underline;
+}
+.getty-link {
+  font-size: 0.85em;
+  vertical-align: super;
+  margin-left: 0.25em;
+  text-decoration: none;
+  color: black; /* colore blu tipo link */
+}
+
+.getty-link:hover {
+  text-decoration: underline;
+}
+.wikidata-link {
+  font-size: 0.85em;
+  vertical-align: super;
+  margin-left: 0.25em;
+  text-decoration: none;
+  color: black; /* colore blu tipo link */
+}
+
+.wikidata-link:hover {
+  text-decoration: underline;
+}
+.geonames-link {
+  font-size: 0.85em;
+  vertical-align: super;
+  margin-left: 0.25em;
+  text-decoration: none;
+  color: black; /* colore blu tipo link */
+}
+
+.geonames-link:hover {
+  text-decoration: underline;
+}
+
+.link-diretto a{
+  color:black;
+}

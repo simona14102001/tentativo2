@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Lettera per il 50º anniversario della Basilica Pontificia di San Nicola</title>
+        <author ref="https://viaf.org/en/viaf/68559410">Papa Francesco</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Santa Sede</publisher>
+        <pubPlace ref="https://www.wikidata.org/wiki/Q237">Vaticano</pubPlace>
+        <date when="2018-11-24">24 novembre 2018</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Lettera di Papa Francesco a Mons. Francesco Cacucci</title>
+          <author>Papa Francesco</author>
+          <editor>Mons. Francesco Cacucci</editor>
+          <pubPlace>Vaticano</pubPlace>
+          <publisher>Santa Sede</publisher>
+          <date when="2018-11-24"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="inviata">
+          <persName>Papa Francesco</persName>
+          <placeName>Vaticano</placeName>
+          <date when="2018-11-24"/>
+        </correspAction>
+        <correspAction type="ricevuta">
+          <persName>Mons. Francesco Cacucci</persName>
+          <placeName>Bari</placeName>
+        </correspAction>
+      </correspDesc>
+      <langUsage>
+        <language ident="it">Italiano</language>
+      </langUsage>
+      
+    </profileDesc>
+
+    <encodingDesc>
+      <projectDesc>
+        <p>Digitalizzazione accademica della lettera pontificia in occasione del cinquantesimo anniversario della Basilica di San Nicola. Codifica conforme alle linee guida TEI P5.</p>
+      </projectDesc>
+    </encodingDesc>
+  </teiHeader>
+
+  <text>
+     <body>
+      <div type="letter">
+        <opener>
+          <salute>
+           <address> 
+            <addrLine>Al Caro Fratello</addrLine>
+            <addrLine>Mons. Francesco Cacucci</addrLine>
+            <addrLine>Arcivescovo di Bari-Bitonto</addrLine>
+            <addrLine>Delegato Pontificio della Basilica di San Nicola</addrLine>
+           </address>
+          </salute>       
+       </opener>
+
+        <p>Sono trascorsi cinquant’anni da quando il mio Predecessore San Paolo VI, elevò la Basilica di San Nicola di Bari a Basilica Pontificia, attribuendo l’ufficio di Delegato Pontificio all’Arcivescovo pro tempore di Bari. Questa importante ricorrenza è motivo di gioia per l’Arcidiocesi, per la città e la Regione Puglia, per l’Ordine dei Predicatori che custodisce il sacro tempio, come pure per l’intera cattolicità poiché questo luogo di fede, di preghiera, di incontro e di dialogo ha favorito il movimento ecumenico.</p>
+
+        <p>In questi anni, la Basilica nicolaiana, così singolarmente legata alla Santa Sede, ha saputo bene manifestare la sua specifica vocazione finalizzata a dare impulso al cammino di unità dei cristiani. Ciò è stato facilitato dalla sincera devozione al Santo Vescovo di Myra dei fedeli d’Oriente e d’Occidente. Il mio pensiero va a tutti coloro che in qualsiasi modo hanno cooperato all’attività liturgica, pastorale, culturale e soprattutto ecumenica, i cui frutti ho potuto constatare personalmente nella mia recente visita in occasione dell’incontro di preghiera e di riflessione con i Capi delle Chiese presenti in Medio Oriente.</p>
+
+        <p>Incoraggio quanti si adoperano, con diverse responsabilità, nella conduzione pastorale di questa storica e insigne Basilica a proseguire il loro servizio con spirito di collaborazione e con rinnovato ardore apostolico, aiutando i pellegrini e la gente che la frequenta e guarda ad essa con fiducia a riscoprirne l’importanza spirituale. Si tratta di favorire nei fedeli il percorso di una assidua ricerca di Dio, alimentata da intensa pietà e da insaziata nostalgia della contemplazione. La preghiera ha una straordinaria forza evangelizzante ed è necessaria per il raggiungimento della piena comunione tra i cristiani.</p>
+
+        <p>Auspico che la significativa ricorrenza cinquantenaria sia, altresì, motivo di un rinnovato interesse per lo studio delle vicende storiche della Basilica Pontificia, della figura di San Nicola, come anche della teologia ecumenica. La riflessione scientifica, accompagnata dalle programmate manifestazioni culturali, possa affiancarsi alla pietà, alla liturgia e al culto verso il Santo apportando un valido contributo alle relazioni ecumeniche tra comunità cattoliche e ortodosse.</p>
+
+        <p>Con tali sentimenti, invocando l’intercessione della Vergine Maria e di San Nicola, di cuore imparto la Benedizione Apostolica a Lei ed all’intera comunità diocesana, al Cardinale Angelo Becciu che presiede l’evento commemorativo, ai Padri Domenicani, ai promotori e relatori del convegno e a quanti prendono parte alle cerimonie evocative.</p>
+
+        <closer>
+          <dateline>
+            <placeName>Dal Vaticano</placeName>
+            <date when="2018-11-24">24 novembre 2018</date>
+          </dateline>
+          <signed>Papa Francesco</signed>
+        </closer>
+      </div>
+    </body>
+  </text>
+</TEI>
+

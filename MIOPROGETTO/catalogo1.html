@@ -1,0 +1,195 @@
+<!DOCTYPE 
+  html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalogo - Monumenti e siti storici di Bari</title>
+  <link rel="stylesheet" href="catalogo-style.css">
+</head>
+<body>
+  <header>
+    <h1>
+      Catalogo dei monumenti e dei siti storici di Bari
+    </h1>
+    <img src="img/logo.png" alt="logo">
+  </header>
+  
+<nav>
+  <ul>
+    <li><a href="index1.html">Home</a></li>
+    <li><a href="#">Introduzione</a></li>
+    <li class="catalogo-menu">
+      <a href="#">Catalogo completo</a>
+       <div class="metodi-accesso">
+        <a href="catalogo1.html?show=1"> Lista dei monumenti e dei siti</a>
+        <a href="#">Epoca</a>
+        <a href="#">Stile</a>
+       </div>
+    </li>
+    <li><a href="#">Storia</a></li>
+      <li><a href="#">Persone</a></li>
+  </ul>
+      <form>
+      <input type="text" placeholder="Cerca...">
+    </form>
+</nav>
+<ul class="breadcrumb">
+  <li><a href="index1.html">Catalogo completo</a></li>
+  <li><a href="#">Lista dei monumenti e dei siti</a></li>
+</ul>
+  <main>    
+    <div class="filtro-lista">
+    <label for="filtroLista">Filtra monumenti e siti (nome, epoca, stile):</label>
+    <input type="text" id="filtroLista" placeholder="Es. XI secolo, Romanico, Castello...">
+    </div>
+
+    <section class="metodi-accesso">
+    <h3>Accesso al catalogo</h3>
+
+  <!-- Metodo attivo: lista ordinata -->
+    <div class="accesso-lista">
+    <h4>Lista dei monumenti e siti</h4>
+     <ol>
+      <li><a href="item1.html">Basilica di San Nicola</a></li>
+      <li><a href="#">Cattedrale di San Sabino</a></li>
+      <li><a href="#">Castello Normanno-Svevo</a></li>
+      <li><a href="#">Teatro Petruzzelli</a></li>
+      <li><a href="#">Centro Storico</a></li>
+      <li><a href="#">Palazzo Mincuzzi</a></li>
+      <li><a href="#">Fortino di sant'Antonio Abate</a></li>
+      <li><a href="#">Teatro Margerita</a></li>
+      <li><a href="#">Arco basso e arco alto</a></li>
+
+     </ol>
+    </div>
+    <!-- Placeholder: filtro per epoca -->
+    <div class="accesso-epoca">
+     <label for="epocaInput">Cerca per epoca:</label>
+     <input type="text" id="epocaInput" placeholder="Es. XI secolo">
+    </div>
+
+  <!-- Placeholder: filtro per stile -->
+    <div class="accesso-stile">
+     <label for="stileInput">Cerca per stile architettonico:</label>
+     <input type="text" id="stileInput" placeholder="Es. Romanico">
+    </div>
+
+  <!-- Placeholder: filtro per tipo -->
+    <div class="accesso-tipo">
+     <label for="tipoInput">Cerca per tipo di monumento:</label>
+     <input type="text" id="tipoInput" placeholder="Es. Monumento religioso">
+    </div>
+   </section>
+  <nav class="nav-filter">
+    <ul>
+    <li><a href="#" class="active">Tutti</a></li>
+    <li><a href="#" class="disabled">Edifici ecclesiastici</a></li>
+    <li><a href="#" class="disabled">Palazzi</a></li>
+    <li><a href="#" class="disabled">Architettura militare</a></li>
+    
+    </ul>
+  </nav>
+    <div class="catalogo-scroll" id="CatalogoScroll">
+    <div class="catalogo-grid">
+      <div class="item-card">
+        <img src="img/Basilica.jpg" alt="Basilica di San Nicola" class="img-effetto">
+        <h3>Basilica di San Nicola<a href="https://www.wikidata.org/wiki/Q550514" class="wikidata-link" target="_blank"><sup>[Wikidata]</sup></a></h3>
+        <p>XI secolo, Romanico<a href="http://vocab.getty.edu/page/aat/300020768" class="getty-link" target="_blank"><sup>[Getty AAT]</sup></a></p>
+        <a href="item1.html" class="scopri-di-piu">Scopri di più</a>
+      </div>
+      <div class="item-card">
+        <img src="img/sansabino.jpg" alt="Cattedrale di San Sabino" class="img-effetto">
+        <h3>Cattedrale di San Sabino<a href="https://www.wikidata.org/wiki/Q383884" class="wikidata-link" target="_blank"><sup>[Wikidata]</sup></a></h3>
+        <p>XII secolo, Romanico<a href="http://vocab.getty.edu/page/aat/300020768" class="getty-link" target="_blank"><sup>[Getty AAT]</sup></a> </p>
+        <a href="#" class="scopri-di-piu">Scopri di più</a>
+      </div>
+
+      <div class="item-card">
+        <img src="img/castello.webp" alt="Castello Normanno-Svevo" class="img-effetto">
+        <h3>Castello Normanno-Svevo<a href="https://www.wikidata.org/wiki/Q790430" class="wikidata-link" target="_blank"><sup>[Wikidata]</sup></a></h3>
+        <p>XII secolo, Architettura militare normanna-sveva<a href="http://vocab.getty.edu/page/aat/300006887" class="getty-link" target="_blank"><sup>[Getty AAT]</sup></a></p>
+        <a href="#" class="scopri-di-piu">Scopri di più</a>
+      </div>
+
+      <div class="item-card">
+        <img src="img/petruzzelli.jpg" alt="Teatro Petruzzelli" class="img-effetto">
+        <h3>Teatro Petruzzelli<a href="https://www.wikidata.org/wiki/Q845510" class="wikidata-link" target="_blank"><sup>[Wikidata]</sup></a></h3>
+        <p>XX secolo, Architettura teatrale in stile eclettico,con elementi neoclassici e liberty<a href="http://vocab.getty.edu/page/aat/300021362" class="getty-link" target="_blank"><sup>[Getty AAT]</sup></a></p>
+        <a href="#" class="scopri-di-piu">Scopri di più</a>
+      </div>
+
+      <div class="item-card">
+        <img src="img/muraglia.jpeg" alt="Muraglia di Bari" class="img-effetto">
+        <h3>Muraglia di Bari<a href="https://www.wikidata.org/wiki/Q62075949" class="wikidata-link" target="_blank"><sup>[Wikidata]</sup></a></h3>
+        <p>Epoca medievale, Architettura Militare<a href="http://vocab.getty.edu/page/aat/300006887" class="getty-link" target="_blank"><sup>[Getty AAT]</sup></a></p>
+        <a href="#" class="scopri-di-piu">Scopri di più</a>
+      </div>
+      <div class="item-card">
+        <img src="img/Palazzo-Mincuzzi.jpg" alt="Palazzo Mincuzzi" class="img-effetto">
+        <h3>Palazzo Mincuzzi<a href="https://www.wikidata.org/wiki/Q99982349" class="wikidata-link" target="_blank"><sup>[Wikidata]</sup></a></h3>
+        <p>XX secolo, Liberty<a href="http://vocab.getty.edu/page/aat/300021362" class="getty-link" target="_blank"><sup>[Getty AAT]</sup></a></p>
+        <a href="#" class="scopri-di-piu">Scopri di più</a>
+      </div>
+      <div class="item-card">
+        <img src="img/Fortino.jpg" alt="Fortino di Sant'Antonio Abate" class="img-effetto">
+        <h3>Fortino di Sant'Antonio Abate<a href="https://www.wikidata.org/wiki/Q62072482" class="wikidata-link" target="_blank"><sup>[Wikidata]</sup></a></h3>
+        <p>XI secolo, Architettura militare<a href="http://vocab.getty.edu/page/aat/300006887" class="getty-link" target="_blank"><sup>[Getty AAT]</sup></a></p>
+        <a href="#" class="scopri-di-piu">Scopri di più</a>
+      </div>
+      <div class="item-card">
+        <img src="img/Teatro-Margherita.jpg" alt="Teatro Margerita" class="img-effetto">
+        <h3>Teatro Margerita<a href="https://www.wikidata.org/wiki/Q3982048" class="wikidata-link" target="_blank"><sup>[Wikidata]</sup></a></h3>
+        <p>XX secolo, Liberty<a href="http://vocab.getty.edu/page/aat/300021362" class="getty-link" target="_blank"><sup>[Getty AAT]</sup></a></p>
+        <a href="#" class="scopri-di-piu">Scopri di più</a>
+      </div>
+      <div class="item-card">
+        <img src="img/arco-basso.jpg" alt="Arco basso" class="img-effetto">
+        <h3>Arco basso<a href="https://www.wikidata.org/wiki/Q135020716" class="wikidata-link" target="_blank"><sup>[Wikidata]</sup></a></h3>
+        <p>XIII secolo, Romanico<a href="http://vocab.getty.edu/page/aat/300020768" class="getty-link" target="_blank"><sup>[Getty AAT]</sup></a></p>
+        <a href="item1.html" class="scopri-di-piu">Scopri di più</a>
+      </div>
+     </div>
+   </div>
+  </main>
+  <script>
+   document.getElementById('filtroLista').addEventListener('input', function() {
+   let filtro = this.value.toLowerCase();
+   let cards = document.querySelectorAll('.item-card');
+
+   cards.forEach(card => {
+   let testo = card.innerText.toLowerCase();
+   if (testo.includes(filtro)) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+   });
+ });
+ </script>
+  <div class="paginazione">
+   <a href="#" class="pagina-btn">1</a>
+   <a href="#" class="pagina-btn">2</a>
+   <a href="#" class="pagina-btn">3</a>
+   <a href="#" class="pagina-btn">4</a>
+   <a href="#" class="pagina-btn">5</a>
+   <a href="#" class="pagina-btn">6</a>
+  
+  </div>
+
+  <footer>
+    <p><a href="#" title="Credits">Credits</a>  |  <a href="#" title="Licenze">Licenze</a></p>
+     <p>©Simona Lagravinese/DH.arc - Digital Humanities Advanced Research Centre
+  , Università di Bologna 2025 | Monumenti e siti storici di Bari </p>
+  </footer>
+
+ <script>
+  document.querySelectorAll('.paginazione a').forEach(el => {
+    el.addEventListener('click', function(event) {
+      event.preventDefault();  // blocca il comportamento del link
+    });
+  });
+  </script>
+ </body>
+</html>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:mp="http://example.org/MyProject/"
+  xsi:schemaLocation="http://example.org/MyProject/ http://example.org/MyProject/schema.xsd">
+
+  <dc:title xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q550514">Basilica Pontificia di San Nicola</dc:title>
+  <dc:subject xsi:type= "mp:getty-AAT" mp:ref="http://vocab.getty.edu/aat/300005888">Basilica pontificia</dc:subject>
+  <dc:coverage xsi:type="mp:getty" mp:ref="http://vocab.getty.edu/tgn/7007166">Bari, Italia</dc:coverage>
+  <dc:description>
+    Architettura: Romanico pugliese. Funzione: Luogo di culto, meta di pellegrinaggio.
+    Religione / Rito: Cattolico (rito romano); Ortodosso nella cripta.
+    Elementi notevoli: Facciata a capanna, Ciborio, Cripta con reliquie di San Nicola.
+  </dc:description>
+  <dc:creator>Architetto anonimo</dc:creator>
+  <dc:contributor>Committente: Abate Elia</dc:contributor>
+  <dc:date>1197</dc:date>
+  <dc:language>it</dc:language>
+  <dc:identifier>BasilicaSanNicola_Bari</dc:identifier>
+  <dcterms:spatial>41.13026 N, 16.87028 E</dcterms:spatial>
+  <dc:type>Oggetto fisico </dc:type>
+  <dc:format xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q23757">Pietra calcarea</dc:format>
+  <dc:format xsi:type="mp:wikidata" mp:ref="https://www.wikidata.org/wiki/Q40861">Marmo</dc:format>
+
+ 
+</metadata>
